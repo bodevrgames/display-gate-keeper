@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Iniciar Jogos</string>
+    <string name="btStartBTE">Jogar BackToEarth</string>
+    <string name="btStart3042">Jogar 3042</string>
+    <string name="btPlaying">Jogando...</string>
+    <string name="GamesPlayed">Vezes jogadas:</string>
+    <string name="WaitingConnection">Aguardando Conexão...</string>
+    <string name="player">Jogador: </string>
+    <string name="playername">Nome do Jogador</string>
+</resources>

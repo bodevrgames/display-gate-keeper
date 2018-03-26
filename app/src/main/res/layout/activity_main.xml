@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.brgplay.gatekeeperlite.MainActivity">
+
+
+    <TextView
+        android:id="@+id/ConectionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/WaitingConnection"
+        android:textAlignment="center"
+        android:textColor="#ff0000"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/ConnectionPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:hint="@string/playername"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:onClick="setUsername"
+            android:text=""
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/PlayingStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1.5"
+            android:text="@string/btPlaying"
+            android:textAlignment="center"
+            android:textColor="#008000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Panel3042"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/PanelBTE"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Logo3042"
+            android:layout_width="400dp"
+            android:layout_height="82dp"
+            android:layout_marginEnd="121dp"
+            android:layout_weight="1.5"
+            app:srcCompat="@drawable/logo3042_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/GamesPlayedTitle3042"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/GamesPlayed"
+                android:textAlignment="center"
+                android:textColor="#00aaff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/PlayedGames3042"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btStart3042"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1.5"
+            android:onClick="startGame3042"
+            android:text="@string/btStart3042"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PanelBTE"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/ConnectionPanel"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/LogoBTE"
+            android:layout_width="400dp"
+            android:layout_height="82dp"
+            android:layout_weight="1.5"
+            app:srcCompat="@drawable/bte_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/GamesPlayedTitleBTE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/GamesPlayed"
+                android:textColor="#1900ff"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/PlayedGamesBTE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btStartBTE"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1.5"
+            android:onClick="startGameBTE"
+            android:text="@string/btStartBTE"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
